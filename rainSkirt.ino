@@ -32,12 +32,12 @@ void loop() {
  bState = digitalRead(bButton);
 
   if(rState){
-     rLed = !rLed
+     digitalWrite(rLed, !digitalRead(rLed));
   }   
   if(gState){
-     gLed = !gLed
+     digitalWrite(gLed, !digitalRead(gLed));
   }   
   if(bState){
-     bLed = !bLed
+     digitalWrite(bLed, !digitalRead(bLed));
   }   
 }
